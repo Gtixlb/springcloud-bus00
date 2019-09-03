@@ -1,0 +1,19 @@
+#RabbitMQ相关配置
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+
+#忽略权限拦截
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
