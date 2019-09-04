@@ -14,7 +14,7 @@ spring:
     port: 5672
     
 server:
-  port: 8880
+  port: 8889
 
 eureka:
   client:
